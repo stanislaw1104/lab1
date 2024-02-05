@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Список дел</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #newItemInput {
+            width: 200px;
+        }
+
+        #addItemBtn, #clearAllBtn {
+            margin-top: 10px;
+        }
+
+        #todoList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .todoItem {
+            margin-top: 10px;
+        }
+
+        .deleteBtn {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список дел</h1>
+    <input type="text" id="newItemInput" placeholder="Новый элемент списка">
+    <button id="addItemBtn">Создать</button>
+    <button id="clearAllBtn">Очистить все</button>
+
+    <ul id="todoList">
+        <li class="todoItem">1. <input type="checkbox"> Почесать кошку <span class="deleteBtn">❌</span></li>
+        <li class="todoItem">2. <input type="checkbox"> Полить картошку <span class="deleteBtn">❌</span></li>
+        <li class="todoItem">3. <input type="checkbox"> Сложить в лукошко <span class="deleteBtn">❌</span></li>
+    </ul>
+
+    
+</body>
+</html>
